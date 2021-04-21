@@ -13,7 +13,10 @@
       <div class="custom-attribute--row__attribute">
         {{ attribute }}
       </div>
-      <div>
+      <a v-if="customAttributes[attribute].startsWith("https://") || customAttributes[attribute].startsWith("http://")" :href="customAttributes[attribute]">
+        {{ customAttributes[attribute] }}
+      </a>
+       <div v-else>
         {{ customAttributes[attribute] }}
       </div>
     </div>
