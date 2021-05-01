@@ -33,15 +33,15 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "FREE"
+      "size": "standard-1x"
     },
     "worker": {
       "quantity": 1,
-      "size": "FREE"
+      "size": "standard-1x"
     }
   },
   "image": "heroku/ruby",
-  "addons": [ "heroku-redis", "heroku-postgresql"],
+  "addons": [ "heroku-redis:premium-0", "heroku-postgresql:standard-0"],
   "buildpacks": [
     {
       "url": "heroku/ruby"
